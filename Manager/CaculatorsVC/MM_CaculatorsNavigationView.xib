@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="es0-Ce-Syd" customClass="MM_CaculatorsNavigationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVB-ay-CCc">
+                    <rect key="frame" x="0.0" y="58" width="375" height="44"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="d4f-a0-kWq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3u-gp-hqk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="X3u-gp-hqk" firstAttribute="leading" secondItem="qj6-9a-PKX" secondAttribute="leading" id="F2Z-1c-0N3"/>
+                <constraint firstItem="qj6-9a-PKX" firstAttribute="trailing" secondItem="X3u-gp-hqk" secondAttribute="trailing" id="LD8-D7-5OZ"/>
+                <constraint firstItem="DVB-ay-CCc" firstAttribute="top" secondItem="X3u-gp-hqk" secondAttribute="bottom" id="S4z-0h-Nl5"/>
+                <constraint firstItem="DVB-ay-CCc" firstAttribute="leading" secondItem="qj6-9a-PKX" secondAttribute="leading" id="bFJ-M1-Xh7"/>
+                <constraint firstAttribute="bottom" secondItem="DVB-ay-CCc" secondAttribute="bottom" id="lbm-hs-k4N"/>
+                <constraint firstItem="X3u-gp-hqk" firstAttribute="top" secondItem="es0-Ce-Syd" secondAttribute="top" id="nbv-P2-sCc"/>
+                <constraint firstItem="qj6-9a-PKX" firstAttribute="trailing" secondItem="DVB-ay-CCc" secondAttribute="trailing" id="pfL-Ws-QKI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="qj6-9a-PKX"/>
+            <connections>
+                <outlet property="contentView" destination="DVB-ay-CCc" id="erN-wZ-0uc"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="-133.13343328335833"/>
+        </view>
+    </objects>
+</document>

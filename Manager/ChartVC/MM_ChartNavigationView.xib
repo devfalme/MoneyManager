@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qtf-ag-gKn" customClass="MM_ChartNavigationView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gcm-BB-QNm">
+                    <rect key="frame" x="0.0" y="58" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bno-q6-Gjf">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="ZrZ-di-6GA"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ReturnButton"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Bno-q6-Gjf" secondAttribute="bottom" id="8QJ-e2-YDj"/>
+                        <constraint firstItem="Bno-q6-Gjf" firstAttribute="top" secondItem="Gcm-BB-QNm" secondAttribute="top" id="bIK-kJ-pHY"/>
+                        <constraint firstItem="Bno-q6-Gjf" firstAttribute="leading" secondItem="Gcm-BB-QNm" secondAttribute="leading" id="bwp-vk-P7U"/>
+                        <constraint firstAttribute="height" constant="44" id="ttv-f3-oM7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jDM-Vi-hrN">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="deviceRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jDM-Vi-hrN" firstAttribute="top" secondItem="qtf-ag-gKn" secondAttribute="top" id="1IK-4D-aQh"/>
+                <constraint firstItem="LkN-5O-rm0" firstAttribute="trailing" secondItem="jDM-Vi-hrN" secondAttribute="trailing" id="23H-dH-6fO"/>
+                <constraint firstAttribute="bottom" secondItem="Gcm-BB-QNm" secondAttribute="bottom" id="393-6I-C0K"/>
+                <constraint firstItem="jDM-Vi-hrN" firstAttribute="leading" secondItem="LkN-5O-rm0" secondAttribute="leading" id="6jy-1T-NBJ"/>
+                <constraint firstItem="Gcm-BB-QNm" firstAttribute="top" secondItem="jDM-Vi-hrN" secondAttribute="bottom" id="7iV-vg-NeS"/>
+                <constraint firstItem="LkN-5O-rm0" firstAttribute="trailing" secondItem="Gcm-BB-QNm" secondAttribute="trailing" id="8LS-Qo-of0"/>
+                <constraint firstItem="Gcm-BB-QNm" firstAttribute="leading" secondItem="LkN-5O-rm0" secondAttribute="leading" id="Pdu-L7-m4V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="LkN-5O-rm0"/>
+            <connections>
+                <outlet property="contentView" destination="Gcm-BB-QNm" id="8s5-ro-IQa"/>
+                <outlet property="returnButton" destination="Bno-q6-Gjf" id="TzD-EF-yjW"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="-133.13343328335833"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ReturnButton" width="44" height="44"/>
+    </resources>
+</document>

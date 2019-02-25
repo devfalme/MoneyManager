@@ -1,0 +1,1326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		602237C621C76E6A003F1E06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237C521C76E6A003F1E06 /* AppDelegate.m */; };
+		602237CE21C76E6B003F1E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 602237CD21C76E6B003F1E06 /* Assets.xcassets */; };
+		602237D121C76E6B003F1E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602237CF21C76E6B003F1E06 /* LaunchScreen.storyboard */; };
+		602237D421C76E6B003F1E06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237D321C76E6B003F1E06 /* main.m */; };
+		602237DE21C778F5003F1E06 /* MM_BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237DD21C778F4003F1E06 /* MM_BaseVC.m */; };
+		602237E221C77957003F1E06 /* MM_BaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237E121C77957003F1E06 /* MM_BaseTableVC.m */; };
+		602237E621C77986003F1E06 /* MM_BillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237E521C77986003F1E06 /* MM_BillVC.m */; };
+		602237EA21C77A83003F1E06 /* MM_SegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237E821C77A83003F1E06 /* MM_SegmentView.m */; };
+		602237EE21C77D25003F1E06 /* MM_BillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237EC21C77D25003F1E06 /* MM_BillCell.m */; };
+		602237EF21C77D25003F1E06 /* MM_BillCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602237ED21C77D25003F1E06 /* MM_BillCell.xib */; };
+		602237F221C77F6D003F1E06 /* MM_BillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 602237F121C77F6D003F1E06 /* MM_BillModel.m */; };
+		6024593521C78411008C3B9F /* MM_Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024593421C78411008C3B9F /* MM_Client.m */; };
+		6024593821C78820008C3B9F /* BillExpend.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6024593721C78820008C3B9F /* BillExpend.plist */; };
+		6024593A21C78BA2008C3B9F /* BillIncome.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6024593921C78BA2008C3B9F /* BillIncome.plist */; };
+		6024593E21C791CD008C3B9F /* MM_BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024593D21C791CD008C3B9F /* MM_BaseModel.m */; };
+		6024594121C7ADD9008C3B9F /* MM_ExpendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024594021C7ADD9008C3B9F /* MM_ExpendVC.m */; };
+		6024594421C7AE45008C3B9F /* MM_BillNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024594321C7AE45008C3B9F /* MM_BillNavigationView.m */; };
+		6024594621C7AE4D008C3B9F /* MM_BillNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6024594521C7AE4D008C3B9F /* MM_BillNavigationView.xib */; };
+		6024594A21C7AF41008C3B9F /* UIView+MM_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024594921C7AF41008C3B9F /* UIView+MM_Manager.m */; };
+		6024594D21C7B625008C3B9F /* MM_IncomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024594C21C7B625008C3B9F /* MM_IncomeVC.m */; };
+		6024595021C7BC8C008C3B9F /* MM_BillKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024594F21C7BC8C008C3B9F /* MM_BillKeyboard.m */; };
+		6024595221C7BC93008C3B9F /* MM_BillKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6024595121C7BC93008C3B9F /* MM_BillKeyboard.xib */; };
+		6024595621C7C322008C3B9F /* MM_TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024595521C7C322008C3B9F /* MM_TestVC.m */; };
+		6024595A21C893C2008C3B9F /* MM_AccountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024595921C893C2008C3B9F /* MM_AccountVC.m */; };
+		6024595D21C89542008C3B9F /* MM_AccountBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6024595C21C89542008C3B9F /* MM_AccountBoardView.m */; };
+		6024595F21C89725008C3B9F /* MM_AccountBoardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6024595E21C89725008C3B9F /* MM_AccountBoardView.xib */; };
+		602CB0F821C8C11F0071D4FF /* MM_AccountModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB0F721C8C11F0071D4FF /* MM_AccountModel.m */; };
+		602CB0FC21C8D91E0071D4FF /* UIScrollView+MM_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB0FB21C8D91E0071D4FF /* UIScrollView+MM_Manager.m */; };
+		602CB10621C8E34B0071D4FF /* WSDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602CB10221C8E34B0071D4FF /* WSDatePickerView.xib */; };
+		602CB10721C8E34B0071D4FF /* WSDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB10321C8E34B0071D4FF /* WSDatePickerView.m */; };
+		602CB10821C8E34B0071D4FF /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB10421C8E34B0071D4FF /* NSDate+Extension.m */; };
+		602CB10921C8E34B0071D4FF /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB10521C8E34B0071D4FF /* UIView+Extension.m */; };
+		602CB10D21C9E6480071D4FF /* MM_BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB10C21C9E6480071D4FF /* MM_BaseNavigationController.m */; };
+		602CB4A821CA14AA0071D4FF /* DVPieCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4A221CA14AA0071D4FF /* DVPieCenterView.m */; };
+		602CB4A921CA14AA0071D4FF /* DVFoodPieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4A321CA14AA0071D4FF /* DVFoodPieModel.m */; };
+		602CB4AA21CA14AA0071D4FF /* DVPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4A721CA14AA0071D4FF /* DVPieChart.m */; };
+		602CB4AF21CA15580071D4FF /* MM_ChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4AD21CA15580071D4FF /* MM_ChartVC.m */; };
+		602CB4B021CA15580071D4FF /* MM_ExpendChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602CB4AE21CA15580071D4FF /* MM_ExpendChartVC.xib */; };
+		602CB4B421CA19170071D4FF /* MM_ExpendChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4B321CA19170071D4FF /* MM_ExpendChartVC.m */; };
+		602CB4B821CA193D0071D4FF /* MM_IncomeChartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 602CB4B621CA193D0071D4FF /* MM_IncomeChartVC.m */; };
+		602CB4B921CA193D0071D4FF /* MM_IncomeChartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602CB4B721CA193D0071D4FF /* MM_IncomeChartVC.xib */; };
+		6033869321CA202D00398C20 /* MM_ChartNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6033869221CA202D00398C20 /* MM_ChartNavigationView.m */; };
+		6033869521CA203200398C20 /* MM_ChartNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6033869421CA203200398C20 /* MM_ChartNavigationView.xib */; };
+		6033869921CA2ACF00398C20 /* UIViewController+MM_Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6033869821CA2ACF00398C20 /* UIViewController+MM_Manager.m */; };
+		6033869E21CA316300398C20 /* MM_BillDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6033869C21CA316300398C20 /* MM_BillDetailVC.m */; };
+		6033869F21CA316300398C20 /* MM_BillDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6033869D21CA316300398C20 /* MM_BillDetailVC.xib */; };
+		603386A321CA4F8300398C20 /* MM_EditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386A221CA4F8300398C20 /* MM_EditVC.m */; };
+		603386A621CA4FB500398C20 /* MM_EditIncomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386A521CA4FB500398C20 /* MM_EditIncomeVC.m */; };
+		603386A921CA4FC000398C20 /* MM_EditExpendVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386A821CA4FC000398C20 /* MM_EditExpendVC.m */; };
+		603386AE21CA62A100398C20 /* MM_SplVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386AC21CA62A100398C20 /* MM_SplVC.m */; };
+		603386AF21CA62A100398C20 /* MM_SplVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603386AD21CA62A100398C20 /* MM_SplVC.xib */; };
+		603386B421CA6A0C00398C20 /* MM_AdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386B221CA6A0C00398C20 /* MM_AdVC.m */; };
+		603386B521CA6A0C00398C20 /* MM_AdVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 603386B321CA6A0C00398C20 /* MM_AdVC.xib */; };
+		603386B921CA72E000398C20 /* MM_ChartDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 603386B821CA72E000398C20 /* MM_ChartDetailVC.m */; };
+		6071A80221C89A0100DAD4D9 /* MM_AccountSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6071A80121C89A0100DAD4D9 /* MM_AccountSectionView.m */; };
+		6071A80421C89A0900DAD4D9 /* MM_AccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6071A80321C89A0900DAD4D9 /* MM_AccountSectionView.xib */; };
+		6071A80821C89B0B00DAD4D9 /* MM_AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6071A80621C89B0B00DAD4D9 /* MM_AccountCell.m */; };
+		6071A80921C89B0B00DAD4D9 /* MM_AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6071A80721C89B0B00DAD4D9 /* MM_AccountCell.xib */; };
+		6086552521DE253000C3E9EF /* MM_TabbarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086552321DE253000C3E9EF /* MM_TabbarVC.m */; };
+		6086552A21DE282D00C3E9EF /* MM_CaculatorsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086552821DE282D00C3E9EF /* MM_CaculatorsVC.m */; };
+		6086552E21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086552D21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.m */; };
+		6086553021DE29F600C3E9EF /* MM_CaculatorsNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086552F21DE29F600C3E9EF /* MM_CaculatorsNavigationView.xib */; };
+		6086554D21DE2CCD00C3E9EF /* MM_FinancialBankVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086553521DE2CCD00C3E9EF /* MM_FinancialBankVC.m */; };
+		6086554E21DE2CCD00C3E9EF /* MM_FinancialBankModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086553621DE2CCD00C3E9EF /* MM_FinancialBankModel.m */; };
+		6086554F21DE2CCD00C3E9EF /* MM_FinancialVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086553921DE2CCD00C3E9EF /* MM_FinancialVC.m */; };
+		6086555021DE2CCD00C3E9EF /* ChooseDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086553B21DE2CCD00C3E9EF /* ChooseDatePickerView.m */; };
+		6086555121DE2CCD00C3E9EF /* ChooseDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086553C21DE2CCD00C3E9EF /* ChooseDatePickerView.xib */; };
+		6086555221DE2CCD00C3E9EF /* MM_BankResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554021DE2CCD00C3E9EF /* MM_BankResultVC.m */; };
+		6086555321DE2CCD00C3E9EF /* MM_BankResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554121DE2CCD00C3E9EF /* MM_BankResultModel.m */; };
+		6086555421DE2CCD00C3E9EF /* MM_P2PResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554521DE2CCD00C3E9EF /* MM_P2PResultVC.m */; };
+		6086555521DE2CCD00C3E9EF /* MM_FinancialP2PModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554821DE2CCD00C3E9EF /* MM_FinancialP2PModel.m */; };
+		6086555621DE2CCD00C3E9EF /* MM_FinancialP2PVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554921DE2CCD00C3E9EF /* MM_FinancialP2PVC.m */; };
+		6086555721DE2CCD00C3E9EF /* MM_FinancialMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086554B21DE2CCD00C3E9EF /* MM_FinancialMenuView.m */; };
+		6086555821DE2CCD00C3E9EF /* MM_FinancialMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086554C21DE2CCD00C3E9EF /* MM_FinancialMenuView.xib */; };
+		6086556221DE2DB800C3E9EF /* MM_WebLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086555921DE2DB700C3E9EF /* MM_WebLoanModel.m */; };
+		6086556321DE2DB800C3E9EF /* MM_WebLoanResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086555E21DE2DB800C3E9EF /* MM_WebLoanResultVC.m */; };
+		6086556421DE2DB800C3E9EF /* MM_WebLoanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086555F21DE2DB800C3E9EF /* MM_WebLoanResultModel.m */; };
+		6086556521DE2DB800C3E9EF /* MM_WebLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086556121DE2DB800C3E9EF /* MM_WebLoanVC.m */; };
+		6086556A21DE2E2A00C3E9EF /* MM_TextFieldVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086556821DE2E2A00C3E9EF /* MM_TextFieldVC.m */; };
+		6086556B21DE2E2A00C3E9EF /* MM_TextFieldVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086556921DE2E2A00C3E9EF /* MM_TextFieldVC.xib */; };
+		6086558321DE2E3200C3E9EF /* MM_CarLoanResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557021DE2E3200C3E9EF /* MM_CarLoanResultVC.m */; };
+		6086558421DE2E3200C3E9EF /* MM_CarLoanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557121DE2E3200C3E9EF /* MM_CarLoanResultModel.m */; };
+		6086558521DE2E3200C3E9EF /* MM_CarLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557321DE2E3200C3E9EF /* MM_CarLoanVC.m */; };
+		6086558621DE2E3200C3E9EF /* MM_CarLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557421DE2E3200C3E9EF /* MM_CarLoanModel.m */; };
+		6086558721DE2E3200C3E9EF /* MM_NormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557821DE2E3200C3E9EF /* MM_NormalCell.m */; };
+		6086558821DE2E3200C3E9EF /* MM_NormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086557A21DE2E3200C3E9EF /* MM_NormalCell.xib */; };
+		6086558921DE2E3200C3E9EF /* MM_ConfromCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086557C21DE2E3200C3E9EF /* MM_ConfromCell.xib */; };
+		6086558A21DE2E3200C3E9EF /* MM_ConfromCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086557E21DE2E3200C3E9EF /* MM_ConfromCell.m */; };
+		6086558B21DE2E3200C3E9EF /* MM_SwithCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6086558021DE2E3200C3E9EF /* MM_SwithCell.xib */; };
+		6086558C21DE2E3200C3E9EF /* MM_SwithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086558221DE2E3200C3E9EF /* MM_SwithCell.m */; };
+		608655A721DE2E4000C3E9EF /* MM_BothLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559021DE2E4000C3E9EF /* MM_BothLoanModel.m */; };
+		608655A821DE2E4000C3E9EF /* MM_BothLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559221DE2E4000C3E9EF /* MM_BothLoanVC.m */; };
+		608655A921DE2E4000C3E9EF /* MM_HouseLoanResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559621DE2E4000C3E9EF /* MM_HouseLoanResultVC.m */; };
+		608655AA21DE2E4000C3E9EF /* MM_HouseLoanResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559721DE2E4000C3E9EF /* MM_HouseLoanResultModel.m */; };
+		608655AB21DE2E4000C3E9EF /* MM_HouseLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559921DE2E4000C3E9EF /* MM_HouseLoanVC.m */; };
+		608655AC21DE2E4000C3E9EF /* MM_BusinessLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559B21DE2E4000C3E9EF /* MM_BusinessLoanModel.m */; };
+		608655AD21DE2E4000C3E9EF /* MM_BusinessLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559E21DE2E4000C3E9EF /* MM_BusinessLoanVC.m */; };
+		608655AE21DE2E4000C3E9EF /* MM_HouseLoanMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086559F21DE2E4000C3E9EF /* MM_HouseLoanMenuView.m */; };
+		608655AF21DE2E4000C3E9EF /* MM_HouseLoanMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 608655A121DE2E4000C3E9EF /* MM_HouseLoanMenuView.xib */; };
+		608655B021DE2E4000C3E9EF /* MM_FundLoanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 608655A321DE2E4000C3E9EF /* MM_FundLoanModel.m */; };
+		608655B121DE2E4000C3E9EF /* MM_FundLoanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 608655A621DE2E4000C3E9EF /* MM_FundLoanVC.m */; };
+		EC0E97B6A6ED3E668665D463 /* libPods-Manager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A10442C1A0BF5D8B05A3A68E /* libPods-Manager.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		393F28F3699A7E1501D98191 /* Pods-Manager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Manager/Pods-Manager.debug.xcconfig"; sourceTree = "<group>"; };
+		602237C121C76E6A003F1E06 /* Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		602237C421C76E6A003F1E06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		602237C521C76E6A003F1E06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		602237CD21C76E6B003F1E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		602237D021C76E6B003F1E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		602237D221C76E6B003F1E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		602237D321C76E6B003F1E06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		602237DC21C778F4003F1E06 /* MM_BaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BaseVC.h; sourceTree = "<group>"; };
+		602237DD21C778F4003F1E06 /* MM_BaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BaseVC.m; sourceTree = "<group>"; };
+		602237E021C77957003F1E06 /* MM_BaseTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BaseTableVC.h; sourceTree = "<group>"; };
+		602237E121C77957003F1E06 /* MM_BaseTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BaseTableVC.m; sourceTree = "<group>"; };
+		602237E421C77986003F1E06 /* MM_BillVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillVC.h; sourceTree = "<group>"; };
+		602237E521C77986003F1E06 /* MM_BillVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillVC.m; sourceTree = "<group>"; };
+		602237E821C77A83003F1E06 /* MM_SegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_SegmentView.m; sourceTree = "<group>"; };
+		602237E921C77A83003F1E06 /* MM_SegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_SegmentView.h; sourceTree = "<group>"; };
+		602237EB21C77D25003F1E06 /* MM_BillCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillCell.h; sourceTree = "<group>"; };
+		602237EC21C77D25003F1E06 /* MM_BillCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillCell.m; sourceTree = "<group>"; };
+		602237ED21C77D25003F1E06 /* MM_BillCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_BillCell.xib; sourceTree = "<group>"; };
+		602237F021C77F6D003F1E06 /* MM_BillModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillModel.h; sourceTree = "<group>"; };
+		602237F121C77F6D003F1E06 /* MM_BillModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillModel.m; sourceTree = "<group>"; };
+		6024593121C7835B008C3B9F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6024593321C78411008C3B9F /* MM_Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_Client.h; sourceTree = "<group>"; };
+		6024593421C78411008C3B9F /* MM_Client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_Client.m; sourceTree = "<group>"; };
+		6024593721C78820008C3B9F /* BillExpend.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BillExpend.plist; sourceTree = "<group>"; };
+		6024593921C78BA2008C3B9F /* BillIncome.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = BillIncome.plist; sourceTree = "<group>"; };
+		6024593C21C791CD008C3B9F /* MM_BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BaseModel.h; sourceTree = "<group>"; };
+		6024593D21C791CD008C3B9F /* MM_BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BaseModel.m; sourceTree = "<group>"; };
+		6024593F21C7ADD9008C3B9F /* MM_ExpendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_ExpendVC.h; sourceTree = "<group>"; };
+		6024594021C7ADD9008C3B9F /* MM_ExpendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_ExpendVC.m; sourceTree = "<group>"; };
+		6024594221C7AE45008C3B9F /* MM_BillNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillNavigationView.h; sourceTree = "<group>"; };
+		6024594321C7AE45008C3B9F /* MM_BillNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillNavigationView.m; sourceTree = "<group>"; };
+		6024594521C7AE4D008C3B9F /* MM_BillNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_BillNavigationView.xib; sourceTree = "<group>"; };
+		6024594821C7AF41008C3B9F /* UIView+MM_Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MM_Manager.h"; sourceTree = "<group>"; };
+		6024594921C7AF41008C3B9F /* UIView+MM_Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MM_Manager.m"; sourceTree = "<group>"; };
+		6024594B21C7B625008C3B9F /* MM_IncomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_IncomeVC.h; sourceTree = "<group>"; };
+		6024594C21C7B625008C3B9F /* MM_IncomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_IncomeVC.m; sourceTree = "<group>"; };
+		6024594E21C7BC8C008C3B9F /* MM_BillKeyboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillKeyboard.h; sourceTree = "<group>"; };
+		6024594F21C7BC8C008C3B9F /* MM_BillKeyboard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillKeyboard.m; sourceTree = "<group>"; };
+		6024595121C7BC93008C3B9F /* MM_BillKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_BillKeyboard.xib; sourceTree = "<group>"; };
+		6024595421C7C322008C3B9F /* MM_TestVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_TestVC.h; sourceTree = "<group>"; };
+		6024595521C7C322008C3B9F /* MM_TestVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_TestVC.m; sourceTree = "<group>"; };
+		6024595821C893C2008C3B9F /* MM_AccountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AccountVC.h; sourceTree = "<group>"; };
+		6024595921C893C2008C3B9F /* MM_AccountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AccountVC.m; sourceTree = "<group>"; };
+		6024595B21C89542008C3B9F /* MM_AccountBoardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AccountBoardView.h; sourceTree = "<group>"; };
+		6024595C21C89542008C3B9F /* MM_AccountBoardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AccountBoardView.m; sourceTree = "<group>"; };
+		6024595E21C89725008C3B9F /* MM_AccountBoardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_AccountBoardView.xib; sourceTree = "<group>"; };
+		602CB0F621C8C11F0071D4FF /* MM_AccountModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AccountModel.h; sourceTree = "<group>"; };
+		602CB0F721C8C11F0071D4FF /* MM_AccountModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AccountModel.m; sourceTree = "<group>"; };
+		602CB0FA21C8D91E0071D4FF /* UIScrollView+MM_Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MM_Manager.h"; sourceTree = "<group>"; };
+		602CB0FB21C8D91E0071D4FF /* UIScrollView+MM_Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MM_Manager.m"; sourceTree = "<group>"; };
+		602CB0FF21C8E34B0071D4FF /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		602CB10021C8E34B0071D4FF /* WSDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSDatePickerView.h; sourceTree = "<group>"; };
+		602CB10121C8E34B0071D4FF /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		602CB10221C8E34B0071D4FF /* WSDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSDatePickerView.xib; sourceTree = "<group>"; };
+		602CB10321C8E34B0071D4FF /* WSDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSDatePickerView.m; sourceTree = "<group>"; };
+		602CB10421C8E34B0071D4FF /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		602CB10521C8E34B0071D4FF /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		602CB10B21C9E6480071D4FF /* MM_BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BaseNavigationController.h; sourceTree = "<group>"; };
+		602CB10C21C9E6480071D4FF /* MM_BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BaseNavigationController.m; sourceTree = "<group>"; };
+		602CB4A221CA14AA0071D4FF /* DVPieCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVPieCenterView.m; sourceTree = "<group>"; };
+		602CB4A321CA14AA0071D4FF /* DVFoodPieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVFoodPieModel.m; sourceTree = "<group>"; };
+		602CB4A421CA14AA0071D4FF /* DVPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVPieChart.h; sourceTree = "<group>"; };
+		602CB4A521CA14AA0071D4FF /* DVPieCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVPieCenterView.h; sourceTree = "<group>"; };
+		602CB4A621CA14AA0071D4FF /* DVFoodPieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVFoodPieModel.h; sourceTree = "<group>"; };
+		602CB4A721CA14AA0071D4FF /* DVPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVPieChart.m; sourceTree = "<group>"; };
+		602CB4AC21CA15580071D4FF /* MM_ChartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_ChartVC.h; sourceTree = "<group>"; };
+		602CB4AD21CA15580071D4FF /* MM_ChartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_ChartVC.m; sourceTree = "<group>"; };
+		602CB4AE21CA15580071D4FF /* MM_ExpendChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_ExpendChartVC.xib; sourceTree = "<group>"; };
+		602CB4B221CA19170071D4FF /* MM_ExpendChartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_ExpendChartVC.h; sourceTree = "<group>"; };
+		602CB4B321CA19170071D4FF /* MM_ExpendChartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_ExpendChartVC.m; sourceTree = "<group>"; };
+		602CB4B521CA193D0071D4FF /* MM_IncomeChartVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_IncomeChartVC.h; sourceTree = "<group>"; };
+		602CB4B621CA193D0071D4FF /* MM_IncomeChartVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_IncomeChartVC.m; sourceTree = "<group>"; };
+		602CB4B721CA193D0071D4FF /* MM_IncomeChartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_IncomeChartVC.xib; sourceTree = "<group>"; };
+		6033869121CA202D00398C20 /* MM_ChartNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_ChartNavigationView.h; sourceTree = "<group>"; };
+		6033869221CA202D00398C20 /* MM_ChartNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_ChartNavigationView.m; sourceTree = "<group>"; };
+		6033869421CA203200398C20 /* MM_ChartNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_ChartNavigationView.xib; sourceTree = "<group>"; };
+		6033869721CA2ACF00398C20 /* UIViewController+MM_Manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MM_Manager.h"; sourceTree = "<group>"; };
+		6033869821CA2ACF00398C20 /* UIViewController+MM_Manager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MM_Manager.m"; sourceTree = "<group>"; };
+		6033869B21CA316300398C20 /* MM_BillDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_BillDetailVC.h; sourceTree = "<group>"; };
+		6033869C21CA316300398C20 /* MM_BillDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_BillDetailVC.m; sourceTree = "<group>"; };
+		6033869D21CA316300398C20 /* MM_BillDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_BillDetailVC.xib; sourceTree = "<group>"; };
+		603386A121CA4F8300398C20 /* MM_EditVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_EditVC.h; sourceTree = "<group>"; };
+		603386A221CA4F8300398C20 /* MM_EditVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_EditVC.m; sourceTree = "<group>"; };
+		603386A421CA4FB500398C20 /* MM_EditIncomeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_EditIncomeVC.h; sourceTree = "<group>"; };
+		603386A521CA4FB500398C20 /* MM_EditIncomeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_EditIncomeVC.m; sourceTree = "<group>"; };
+		603386A721CA4FC000398C20 /* MM_EditExpendVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_EditExpendVC.h; sourceTree = "<group>"; };
+		603386A821CA4FC000398C20 /* MM_EditExpendVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_EditExpendVC.m; sourceTree = "<group>"; };
+		603386AB21CA62A100398C20 /* MM_SplVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_SplVC.h; sourceTree = "<group>"; };
+		603386AC21CA62A100398C20 /* MM_SplVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_SplVC.m; sourceTree = "<group>"; };
+		603386AD21CA62A100398C20 /* MM_SplVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_SplVC.xib; sourceTree = "<group>"; };
+		603386B121CA6A0C00398C20 /* MM_AdVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AdVC.h; sourceTree = "<group>"; };
+		603386B221CA6A0C00398C20 /* MM_AdVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AdVC.m; sourceTree = "<group>"; };
+		603386B321CA6A0C00398C20 /* MM_AdVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_AdVC.xib; sourceTree = "<group>"; };
+		603386B721CA72E000398C20 /* MM_ChartDetailVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_ChartDetailVC.h; sourceTree = "<group>"; };
+		603386B821CA72E000398C20 /* MM_ChartDetailVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_ChartDetailVC.m; sourceTree = "<group>"; };
+		6071A80021C89A0100DAD4D9 /* MM_AccountSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AccountSectionView.h; sourceTree = "<group>"; };
+		6071A80121C89A0100DAD4D9 /* MM_AccountSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AccountSectionView.m; sourceTree = "<group>"; };
+		6071A80321C89A0900DAD4D9 /* MM_AccountSectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_AccountSectionView.xib; sourceTree = "<group>"; };
+		6071A80521C89B0B00DAD4D9 /* MM_AccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_AccountCell.h; sourceTree = "<group>"; };
+		6071A80621C89B0B00DAD4D9 /* MM_AccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_AccountCell.m; sourceTree = "<group>"; };
+		6071A80721C89B0B00DAD4D9 /* MM_AccountCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_AccountCell.xib; sourceTree = "<group>"; };
+		6086552321DE253000C3E9EF /* MM_TabbarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_TabbarVC.m; sourceTree = "<group>"; };
+		6086552421DE253000C3E9EF /* MM_TabbarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_TabbarVC.h; sourceTree = "<group>"; };
+		6086552721DE282D00C3E9EF /* MM_CaculatorsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_CaculatorsVC.h; sourceTree = "<group>"; };
+		6086552821DE282D00C3E9EF /* MM_CaculatorsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_CaculatorsVC.m; sourceTree = "<group>"; };
+		6086552C21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MM_CaculatorsNavigationView.h; sourceTree = "<group>"; };
+		6086552D21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MM_CaculatorsNavigationView.m; sourceTree = "<group>"; };
+		6086552F21DE29F600C3E9EF /* MM_CaculatorsNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MM_CaculatorsNavigationView.xib; sourceTree = "<group>"; };
+		6086553321DE2CCD00C3E9EF /* MM_FinancialMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialMenuView.h; sourceTree = "<group>"; };
+		6086553521DE2CCD00C3E9EF /* MM_FinancialBankVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialBankVC.m; sourceTree = "<group>"; };
+		6086553621DE2CCD00C3E9EF /* MM_FinancialBankModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialBankModel.m; sourceTree = "<group>"; };
+		6086553721DE2CCD00C3E9EF /* MM_FinancialBankVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialBankVC.h; sourceTree = "<group>"; };
+		6086553821DE2CCD00C3E9EF /* MM_FinancialBankModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialBankModel.h; sourceTree = "<group>"; };
+		6086553921DE2CCD00C3E9EF /* MM_FinancialVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialVC.m; sourceTree = "<group>"; };
+		6086553B21DE2CCD00C3E9EF /* ChooseDatePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDatePickerView.m; sourceTree = "<group>"; };
+		6086553C21DE2CCD00C3E9EF /* ChooseDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseDatePickerView.xib; sourceTree = "<group>"; };
+		6086553D21DE2CCD00C3E9EF /* ChooseDatePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDatePickerView.h; sourceTree = "<group>"; };
+		6086553E21DE2CCD00C3E9EF /* MM_FinancialVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialVC.h; sourceTree = "<group>"; };
+		6086554021DE2CCD00C3E9EF /* MM_BankResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BankResultVC.m; sourceTree = "<group>"; };
+		6086554121DE2CCD00C3E9EF /* MM_BankResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BankResultModel.m; sourceTree = "<group>"; };
+		6086554221DE2CCD00C3E9EF /* MM_P2PResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_P2PResultVC.h; sourceTree = "<group>"; };
+		6086554321DE2CCD00C3E9EF /* MM_BankResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BankResultVC.h; sourceTree = "<group>"; };
+		6086554421DE2CCD00C3E9EF /* MM_BankResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BankResultModel.h; sourceTree = "<group>"; };
+		6086554521DE2CCD00C3E9EF /* MM_P2PResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_P2PResultVC.m; sourceTree = "<group>"; };
+		6086554721DE2CCD00C3E9EF /* MM_FinancialP2PVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialP2PVC.h; sourceTree = "<group>"; };
+		6086554821DE2CCD00C3E9EF /* MM_FinancialP2PModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialP2PModel.m; sourceTree = "<group>"; };
+		6086554921DE2CCD00C3E9EF /* MM_FinancialP2PVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialP2PVC.m; sourceTree = "<group>"; };
+		6086554A21DE2CCD00C3E9EF /* MM_FinancialP2PModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FinancialP2PModel.h; sourceTree = "<group>"; };
+		6086554B21DE2CCD00C3E9EF /* MM_FinancialMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FinancialMenuView.m; sourceTree = "<group>"; };
+		6086554C21DE2CCD00C3E9EF /* MM_FinancialMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_FinancialMenuView.xib; sourceTree = "<group>"; };
+		6086555921DE2DB700C3E9EF /* MM_WebLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_WebLoanModel.m; sourceTree = "<group>"; };
+		6086555A21DE2DB700C3E9EF /* MM_WebLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_WebLoanModel.h; sourceTree = "<group>"; };
+		6086555C21DE2DB800C3E9EF /* MM_WebLoanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_WebLoanResultModel.h; sourceTree = "<group>"; };
+		6086555D21DE2DB800C3E9EF /* MM_WebLoanResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_WebLoanResultVC.h; sourceTree = "<group>"; };
+		6086555E21DE2DB800C3E9EF /* MM_WebLoanResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_WebLoanResultVC.m; sourceTree = "<group>"; };
+		6086555F21DE2DB800C3E9EF /* MM_WebLoanResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_WebLoanResultModel.m; sourceTree = "<group>"; };
+		6086556021DE2DB800C3E9EF /* MM_WebLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_WebLoanVC.h; sourceTree = "<group>"; };
+		6086556121DE2DB800C3E9EF /* MM_WebLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_WebLoanVC.m; sourceTree = "<group>"; };
+		6086556721DE2E2A00C3E9EF /* MM_TextFieldVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_TextFieldVC.h; sourceTree = "<group>"; };
+		6086556821DE2E2A00C3E9EF /* MM_TextFieldVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_TextFieldVC.m; sourceTree = "<group>"; };
+		6086556921DE2E2A00C3E9EF /* MM_TextFieldVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_TextFieldVC.xib; sourceTree = "<group>"; };
+		6086556D21DE2E3200C3E9EF /* MM_CarLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_CarLoanModel.h; sourceTree = "<group>"; };
+		6086556F21DE2E3200C3E9EF /* MM_CarLoanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_CarLoanResultModel.h; sourceTree = "<group>"; };
+		6086557021DE2E3200C3E9EF /* MM_CarLoanResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_CarLoanResultVC.m; sourceTree = "<group>"; };
+		6086557121DE2E3200C3E9EF /* MM_CarLoanResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_CarLoanResultModel.m; sourceTree = "<group>"; };
+		6086557221DE2E3200C3E9EF /* MM_CarLoanResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_CarLoanResultVC.h; sourceTree = "<group>"; };
+		6086557321DE2E3200C3E9EF /* MM_CarLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_CarLoanVC.m; sourceTree = "<group>"; };
+		6086557421DE2E3200C3E9EF /* MM_CarLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_CarLoanModel.m; sourceTree = "<group>"; };
+		6086557521DE2E3200C3E9EF /* MM_CarLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_CarLoanVC.h; sourceTree = "<group>"; };
+		6086557821DE2E3200C3E9EF /* MM_NormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_NormalCell.m; sourceTree = "<group>"; };
+		6086557921DE2E3200C3E9EF /* MM_NormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_NormalCell.h; sourceTree = "<group>"; };
+		6086557A21DE2E3200C3E9EF /* MM_NormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_NormalCell.xib; sourceTree = "<group>"; };
+		6086557C21DE2E3200C3E9EF /* MM_ConfromCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_ConfromCell.xib; sourceTree = "<group>"; };
+		6086557D21DE2E3200C3E9EF /* MM_ConfromCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_ConfromCell.h; sourceTree = "<group>"; };
+		6086557E21DE2E3200C3E9EF /* MM_ConfromCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_ConfromCell.m; sourceTree = "<group>"; };
+		6086558021DE2E3200C3E9EF /* MM_SwithCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_SwithCell.xib; sourceTree = "<group>"; };
+		6086558121DE2E3200C3E9EF /* MM_SwithCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_SwithCell.h; sourceTree = "<group>"; };
+		6086558221DE2E3200C3E9EF /* MM_SwithCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_SwithCell.m; sourceTree = "<group>"; };
+		6086558F21DE2E4000C3E9EF /* MM_BothLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BothLoanVC.h; sourceTree = "<group>"; };
+		6086559021DE2E4000C3E9EF /* MM_BothLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BothLoanModel.m; sourceTree = "<group>"; };
+		6086559121DE2E4000C3E9EF /* MM_BothLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BothLoanModel.h; sourceTree = "<group>"; };
+		6086559221DE2E4000C3E9EF /* MM_BothLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BothLoanVC.m; sourceTree = "<group>"; };
+		6086559421DE2E4000C3E9EF /* MM_HouseLoanResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_HouseLoanResultVC.h; sourceTree = "<group>"; };
+		6086559521DE2E4000C3E9EF /* MM_HouseLoanResultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_HouseLoanResultModel.h; sourceTree = "<group>"; };
+		6086559621DE2E4000C3E9EF /* MM_HouseLoanResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_HouseLoanResultVC.m; sourceTree = "<group>"; };
+		6086559721DE2E4000C3E9EF /* MM_HouseLoanResultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_HouseLoanResultModel.m; sourceTree = "<group>"; };
+		6086559821DE2E4000C3E9EF /* MM_HouseLoanMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_HouseLoanMenuView.h; sourceTree = "<group>"; };
+		6086559921DE2E4000C3E9EF /* MM_HouseLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_HouseLoanVC.m; sourceTree = "<group>"; };
+		6086559B21DE2E4000C3E9EF /* MM_BusinessLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BusinessLoanModel.m; sourceTree = "<group>"; };
+		6086559C21DE2E4000C3E9EF /* MM_BusinessLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BusinessLoanVC.h; sourceTree = "<group>"; };
+		6086559D21DE2E4000C3E9EF /* MM_BusinessLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_BusinessLoanModel.h; sourceTree = "<group>"; };
+		6086559E21DE2E4000C3E9EF /* MM_BusinessLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_BusinessLoanVC.m; sourceTree = "<group>"; };
+		6086559F21DE2E4000C3E9EF /* MM_HouseLoanMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_HouseLoanMenuView.m; sourceTree = "<group>"; };
+		608655A021DE2E4000C3E9EF /* MM_HouseLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_HouseLoanVC.h; sourceTree = "<group>"; };
+		608655A121DE2E4000C3E9EF /* MM_HouseLoanMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MM_HouseLoanMenuView.xib; sourceTree = "<group>"; };
+		608655A321DE2E4000C3E9EF /* MM_FundLoanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FundLoanModel.m; sourceTree = "<group>"; };
+		608655A421DE2E4000C3E9EF /* MM_FundLoanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FundLoanVC.h; sourceTree = "<group>"; };
+		608655A521DE2E4000C3E9EF /* MM_FundLoanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MM_FundLoanModel.h; sourceTree = "<group>"; };
+		608655A621DE2E4000C3E9EF /* MM_FundLoanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MM_FundLoanVC.m; sourceTree = "<group>"; };
+		608655B421DE3E1700C3E9EF /* Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Manager.entitlements; sourceTree = "<group>"; };
+		6312197B8F5A5C2172A26E0E /* Pods-Manager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manager.release.xcconfig"; path = "Pods/Target Support Files/Pods-Manager/Pods-Manager.release.xcconfig"; sourceTree = "<group>"; };
+		A10442C1A0BF5D8B05A3A68E /* libPods-Manager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Manager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		602237BE21C76E6A003F1E06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0E97B6A6ED3E668665D463 /* libPods-Manager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		602237B821C76E6A003F1E06 = {
+			isa = PBXGroup;
+			children = (
+				602237C321C76E6A003F1E06 /* Manager */,
+				602237C221C76E6A003F1E06 /* Products */,
+				CB485094A7C5A7D84E22B311 /* Pods */,
+				EAD647ED7870F43C793FAF2F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		602237C221C76E6A003F1E06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				602237C121C76E6A003F1E06 /* Manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		602237C321C76E6A003F1E06 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				608655B421DE3E1700C3E9EF /* Manager.entitlements */,
+				6086558D21DE2E4000C3E9EF /* HouseLoanVC */,
+				6086557621DE2E3200C3E9EF /* Cells */,
+				6086556C21DE2E3200C3E9EF /* CarLoanVC */,
+				6086556621DE2E2A00C3E9EF /* TextfieldVC */,
+				6086553221DE2CB500C3E9EF /* FinancialVC */,
+				6086553121DE2CA600C3E9EF /* WebLoanVC */,
+				6086552621DE280C00C3E9EF /* CaculatorsVC */,
+				6086552221DE251B00C3E9EF /* TabbarVC */,
+				603386B621CA72AF00398C20 /* ChartDetailVC */,
+				603386B021CA69FB00398C20 /* ADVC */,
+				603386AA21CA628400398C20 /* SplVC */,
+				603386A021CA4F5500398C20 /* EditVC */,
+				6033869A21CA314600398C20 /* BillDetailVC */,
+				602CB4AB21CA14E30071D4FF /* ChartVC */,
+				602CB4A121CA14AA0071D4FF /* DVDishPieHeader */,
+				602CB0FE21C8E34B0071D4FF /* DatePickerView */,
+				6024595721C89397008C3B9F /* AccountVC */,
+				6024595321C7C30D008C3B9F /* TEST */,
+				6024594721C7AF27008C3B9F /* Categroy */,
+				6024593621C787D8008C3B9F /* Resource */,
+				6024593221C783F8008C3B9F /* Client */,
+				6024593021C78352008C3B9F /* PCH */,
+				602237E721C77A83003F1E06 /* SegmentView */,
+				602237E321C77970003F1E06 /* BillVC */,
+				602237DA21C778C9003F1E06 /* Base */,
+				602237C421C76E6A003F1E06 /* AppDelegate.h */,
+				602237C521C76E6A003F1E06 /* AppDelegate.m */,
+				602237CD21C76E6B003F1E06 /* Assets.xcassets */,
+				602237CF21C76E6B003F1E06 /* LaunchScreen.storyboard */,
+				602237D221C76E6B003F1E06 /* Info.plist */,
+				602237D321C76E6B003F1E06 /* main.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		602237DA21C778C9003F1E06 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				602CB10A21C9E62B0071D4FF /* BaseNavigationController */,
+				6024593B21C791BF008C3B9F /* BaseModel */,
+				602237DF21C77942003F1E06 /* BaseTableVC */,
+				602237DB21C778D0003F1E06 /* BaseVC */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		602237DB21C778D0003F1E06 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				602237DC21C778F4003F1E06 /* MM_BaseVC.h */,
+				602237DD21C778F4003F1E06 /* MM_BaseVC.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		602237DF21C77942003F1E06 /* BaseTableVC */ = {
+			isa = PBXGroup;
+			children = (
+				602237E021C77957003F1E06 /* MM_BaseTableVC.h */,
+				602237E121C77957003F1E06 /* MM_BaseTableVC.m */,
+			);
+			path = BaseTableVC;
+			sourceTree = "<group>";
+		};
+		602237E321C77970003F1E06 /* BillVC */ = {
+			isa = PBXGroup;
+			children = (
+				602237E421C77986003F1E06 /* MM_BillVC.h */,
+				602237E521C77986003F1E06 /* MM_BillVC.m */,
+				602237EB21C77D25003F1E06 /* MM_BillCell.h */,
+				602237EC21C77D25003F1E06 /* MM_BillCell.m */,
+				602237ED21C77D25003F1E06 /* MM_BillCell.xib */,
+				602237F021C77F6D003F1E06 /* MM_BillModel.h */,
+				602237F121C77F6D003F1E06 /* MM_BillModel.m */,
+				6024593F21C7ADD9008C3B9F /* MM_ExpendVC.h */,
+				6024594021C7ADD9008C3B9F /* MM_ExpendVC.m */,
+				6024594221C7AE45008C3B9F /* MM_BillNavigationView.h */,
+				6024594321C7AE45008C3B9F /* MM_BillNavigationView.m */,
+				6024594521C7AE4D008C3B9F /* MM_BillNavigationView.xib */,
+				6024594B21C7B625008C3B9F /* MM_IncomeVC.h */,
+				6024594C21C7B625008C3B9F /* MM_IncomeVC.m */,
+				6024594E21C7BC8C008C3B9F /* MM_BillKeyboard.h */,
+				6024594F21C7BC8C008C3B9F /* MM_BillKeyboard.m */,
+				6024595121C7BC93008C3B9F /* MM_BillKeyboard.xib */,
+			);
+			path = BillVC;
+			sourceTree = "<group>";
+		};
+		602237E721C77A83003F1E06 /* SegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				602237E921C77A83003F1E06 /* MM_SegmentView.h */,
+				602237E821C77A83003F1E06 /* MM_SegmentView.m */,
+			);
+			path = SegmentView;
+			sourceTree = "<group>";
+		};
+		6024593021C78352008C3B9F /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				6024593121C7835B008C3B9F /* PrefixHeader.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		6024593221C783F8008C3B9F /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				6024593321C78411008C3B9F /* MM_Client.h */,
+				6024593421C78411008C3B9F /* MM_Client.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		6024593621C787D8008C3B9F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6024593721C78820008C3B9F /* BillExpend.plist */,
+				6024593921C78BA2008C3B9F /* BillIncome.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		6024593B21C791BF008C3B9F /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				6024593C21C791CD008C3B9F /* MM_BaseModel.h */,
+				6024593D21C791CD008C3B9F /* MM_BaseModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		6024594721C7AF27008C3B9F /* Categroy */ = {
+			isa = PBXGroup;
+			children = (
+				6033869621CA2ABE00398C20 /* UIViewController */,
+				602CB0FD21C8DF5B0071D4FF /* UIView */,
+				602CB0F921C8D9040071D4FF /* UIScrollView */,
+			);
+			path = Categroy;
+			sourceTree = "<group>";
+		};
+		6024595321C7C30D008C3B9F /* TEST */ = {
+			isa = PBXGroup;
+			children = (
+				6024595421C7C322008C3B9F /* MM_TestVC.h */,
+				6024595521C7C322008C3B9F /* MM_TestVC.m */,
+			);
+			path = TEST;
+			sourceTree = "<group>";
+		};
+		6024595721C89397008C3B9F /* AccountVC */ = {
+			isa = PBXGroup;
+			children = (
+				6024595821C893C2008C3B9F /* MM_AccountVC.h */,
+				6024595921C893C2008C3B9F /* MM_AccountVC.m */,
+				6024595B21C89542008C3B9F /* MM_AccountBoardView.h */,
+				6024595C21C89542008C3B9F /* MM_AccountBoardView.m */,
+				6024595E21C89725008C3B9F /* MM_AccountBoardView.xib */,
+				6071A80021C89A0100DAD4D9 /* MM_AccountSectionView.h */,
+				6071A80121C89A0100DAD4D9 /* MM_AccountSectionView.m */,
+				6071A80321C89A0900DAD4D9 /* MM_AccountSectionView.xib */,
+				6071A80521C89B0B00DAD4D9 /* MM_AccountCell.h */,
+				6071A80621C89B0B00DAD4D9 /* MM_AccountCell.m */,
+				6071A80721C89B0B00DAD4D9 /* MM_AccountCell.xib */,
+				602CB0F621C8C11F0071D4FF /* MM_AccountModel.h */,
+				602CB0F721C8C11F0071D4FF /* MM_AccountModel.m */,
+			);
+			path = AccountVC;
+			sourceTree = "<group>";
+		};
+		602CB0F921C8D9040071D4FF /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				602CB0FA21C8D91E0071D4FF /* UIScrollView+MM_Manager.h */,
+				602CB0FB21C8D91E0071D4FF /* UIScrollView+MM_Manager.m */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		602CB0FD21C8DF5B0071D4FF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				6024594821C7AF41008C3B9F /* UIView+MM_Manager.h */,
+				6024594921C7AF41008C3B9F /* UIView+MM_Manager.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		602CB0FE21C8E34B0071D4FF /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				602CB0FF21C8E34B0071D4FF /* NSDate+Extension.h */,
+				602CB10021C8E34B0071D4FF /* WSDatePickerView.h */,
+				602CB10121C8E34B0071D4FF /* UIView+Extension.h */,
+				602CB10221C8E34B0071D4FF /* WSDatePickerView.xib */,
+				602CB10321C8E34B0071D4FF /* WSDatePickerView.m */,
+				602CB10421C8E34B0071D4FF /* NSDate+Extension.m */,
+				602CB10521C8E34B0071D4FF /* UIView+Extension.m */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		602CB10A21C9E62B0071D4FF /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				602CB10B21C9E6480071D4FF /* MM_BaseNavigationController.h */,
+				602CB10C21C9E6480071D4FF /* MM_BaseNavigationController.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		602CB4A121CA14AA0071D4FF /* DVDishPieHeader */ = {
+			isa = PBXGroup;
+			children = (
+				602CB4A221CA14AA0071D4FF /* DVPieCenterView.m */,
+				602CB4A321CA14AA0071D4FF /* DVFoodPieModel.m */,
+				602CB4A421CA14AA0071D4FF /* DVPieChart.h */,
+				602CB4A521CA14AA0071D4FF /* DVPieCenterView.h */,
+				602CB4A621CA14AA0071D4FF /* DVFoodPieModel.h */,
+				602CB4A721CA14AA0071D4FF /* DVPieChart.m */,
+			);
+			path = DVDishPieHeader;
+			sourceTree = "<group>";
+		};
+		602CB4AB21CA14E30071D4FF /* ChartVC */ = {
+			isa = PBXGroup;
+			children = (
+				602CB4AC21CA15580071D4FF /* MM_ChartVC.h */,
+				602CB4AD21CA15580071D4FF /* MM_ChartVC.m */,
+				602CB4B221CA19170071D4FF /* MM_ExpendChartVC.h */,
+				602CB4B321CA19170071D4FF /* MM_ExpendChartVC.m */,
+				602CB4AE21CA15580071D4FF /* MM_ExpendChartVC.xib */,
+				602CB4B521CA193D0071D4FF /* MM_IncomeChartVC.h */,
+				602CB4B621CA193D0071D4FF /* MM_IncomeChartVC.m */,
+				602CB4B721CA193D0071D4FF /* MM_IncomeChartVC.xib */,
+				6033869121CA202D00398C20 /* MM_ChartNavigationView.h */,
+				6033869221CA202D00398C20 /* MM_ChartNavigationView.m */,
+				6033869421CA203200398C20 /* MM_ChartNavigationView.xib */,
+			);
+			path = ChartVC;
+			sourceTree = "<group>";
+		};
+		6033869621CA2ABE00398C20 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6033869721CA2ACF00398C20 /* UIViewController+MM_Manager.h */,
+				6033869821CA2ACF00398C20 /* UIViewController+MM_Manager.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		6033869A21CA314600398C20 /* BillDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				6033869B21CA316300398C20 /* MM_BillDetailVC.h */,
+				6033869C21CA316300398C20 /* MM_BillDetailVC.m */,
+				6033869D21CA316300398C20 /* MM_BillDetailVC.xib */,
+			);
+			path = BillDetailVC;
+			sourceTree = "<group>";
+		};
+		603386A021CA4F5500398C20 /* EditVC */ = {
+			isa = PBXGroup;
+			children = (
+				603386A121CA4F8300398C20 /* MM_EditVC.h */,
+				603386A221CA4F8300398C20 /* MM_EditVC.m */,
+				603386A421CA4FB500398C20 /* MM_EditIncomeVC.h */,
+				603386A521CA4FB500398C20 /* MM_EditIncomeVC.m */,
+				603386A721CA4FC000398C20 /* MM_EditExpendVC.h */,
+				603386A821CA4FC000398C20 /* MM_EditExpendVC.m */,
+			);
+			path = EditVC;
+			sourceTree = "<group>";
+		};
+		603386AA21CA628400398C20 /* SplVC */ = {
+			isa = PBXGroup;
+			children = (
+				603386AB21CA62A100398C20 /* MM_SplVC.h */,
+				603386AC21CA62A100398C20 /* MM_SplVC.m */,
+				603386AD21CA62A100398C20 /* MM_SplVC.xib */,
+			);
+			path = SplVC;
+			sourceTree = "<group>";
+		};
+		603386B021CA69FB00398C20 /* ADVC */ = {
+			isa = PBXGroup;
+			children = (
+				603386B121CA6A0C00398C20 /* MM_AdVC.h */,
+				603386B221CA6A0C00398C20 /* MM_AdVC.m */,
+				603386B321CA6A0C00398C20 /* MM_AdVC.xib */,
+			);
+			path = ADVC;
+			sourceTree = "<group>";
+		};
+		603386B621CA72AF00398C20 /* ChartDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				603386B721CA72E000398C20 /* MM_ChartDetailVC.h */,
+				603386B821CA72E000398C20 /* MM_ChartDetailVC.m */,
+			);
+			path = ChartDetailVC;
+			sourceTree = "<group>";
+		};
+		6086552221DE251B00C3E9EF /* TabbarVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086552421DE253000C3E9EF /* MM_TabbarVC.h */,
+				6086552321DE253000C3E9EF /* MM_TabbarVC.m */,
+			);
+			path = TabbarVC;
+			sourceTree = "<group>";
+		};
+		6086552621DE280C00C3E9EF /* CaculatorsVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086552721DE282D00C3E9EF /* MM_CaculatorsVC.h */,
+				6086552821DE282D00C3E9EF /* MM_CaculatorsVC.m */,
+				6086552C21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.h */,
+				6086552D21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.m */,
+				6086552F21DE29F600C3E9EF /* MM_CaculatorsNavigationView.xib */,
+			);
+			path = CaculatorsVC;
+			sourceTree = "<group>";
+		};
+		6086553121DE2CA600C3E9EF /* WebLoanVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086555A21DE2DB700C3E9EF /* MM_WebLoanModel.h */,
+				6086555921DE2DB700C3E9EF /* MM_WebLoanModel.m */,
+				6086556021DE2DB800C3E9EF /* MM_WebLoanVC.h */,
+				6086556121DE2DB800C3E9EF /* MM_WebLoanVC.m */,
+				6086555B21DE2DB700C3E9EF /* ResultVC */,
+			);
+			path = WebLoanVC;
+			sourceTree = "<group>";
+		};
+		6086553221DE2CB500C3E9EF /* FinancialVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086553421DE2CCD00C3E9EF /* Bank */,
+				6086553321DE2CCD00C3E9EF /* MM_FinancialMenuView.h */,
+				6086554B21DE2CCD00C3E9EF /* MM_FinancialMenuView.m */,
+				6086554C21DE2CCD00C3E9EF /* MM_FinancialMenuView.xib */,
+				6086553E21DE2CCD00C3E9EF /* MM_FinancialVC.h */,
+				6086553921DE2CCD00C3E9EF /* MM_FinancialVC.m */,
+				6086553A21DE2CCD00C3E9EF /* DatePicker */,
+				6086554621DE2CCD00C3E9EF /* P2P */,
+				6086553F21DE2CCD00C3E9EF /* ResultVC */,
+			);
+			path = FinancialVC;
+			sourceTree = "<group>";
+		};
+		6086553421DE2CCD00C3E9EF /* Bank */ = {
+			isa = PBXGroup;
+			children = (
+				6086553521DE2CCD00C3E9EF /* MM_FinancialBankVC.m */,
+				6086553621DE2CCD00C3E9EF /* MM_FinancialBankModel.m */,
+				6086553721DE2CCD00C3E9EF /* MM_FinancialBankVC.h */,
+				6086553821DE2CCD00C3E9EF /* MM_FinancialBankModel.h */,
+			);
+			path = Bank;
+			sourceTree = "<group>";
+		};
+		6086553A21DE2CCD00C3E9EF /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				6086553B21DE2CCD00C3E9EF /* ChooseDatePickerView.m */,
+				6086553C21DE2CCD00C3E9EF /* ChooseDatePickerView.xib */,
+				6086553D21DE2CCD00C3E9EF /* ChooseDatePickerView.h */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		6086553F21DE2CCD00C3E9EF /* ResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086554021DE2CCD00C3E9EF /* MM_BankResultVC.m */,
+				6086554121DE2CCD00C3E9EF /* MM_BankResultModel.m */,
+				6086554221DE2CCD00C3E9EF /* MM_P2PResultVC.h */,
+				6086554321DE2CCD00C3E9EF /* MM_BankResultVC.h */,
+				6086554421DE2CCD00C3E9EF /* MM_BankResultModel.h */,
+				6086554521DE2CCD00C3E9EF /* MM_P2PResultVC.m */,
+			);
+			path = ResultVC;
+			sourceTree = "<group>";
+		};
+		6086554621DE2CCD00C3E9EF /* P2P */ = {
+			isa = PBXGroup;
+			children = (
+				6086554721DE2CCD00C3E9EF /* MM_FinancialP2PVC.h */,
+				6086554821DE2CCD00C3E9EF /* MM_FinancialP2PModel.m */,
+				6086554921DE2CCD00C3E9EF /* MM_FinancialP2PVC.m */,
+				6086554A21DE2CCD00C3E9EF /* MM_FinancialP2PModel.h */,
+			);
+			path = P2P;
+			sourceTree = "<group>";
+		};
+		6086555B21DE2DB700C3E9EF /* ResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086555C21DE2DB800C3E9EF /* MM_WebLoanResultModel.h */,
+				6086555D21DE2DB800C3E9EF /* MM_WebLoanResultVC.h */,
+				6086555E21DE2DB800C3E9EF /* MM_WebLoanResultVC.m */,
+				6086555F21DE2DB800C3E9EF /* MM_WebLoanResultModel.m */,
+			);
+			path = ResultVC;
+			sourceTree = "<group>";
+		};
+		6086556621DE2E2A00C3E9EF /* TextfieldVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086556721DE2E2A00C3E9EF /* MM_TextFieldVC.h */,
+				6086556821DE2E2A00C3E9EF /* MM_TextFieldVC.m */,
+				6086556921DE2E2A00C3E9EF /* MM_TextFieldVC.xib */,
+			);
+			path = TextfieldVC;
+			sourceTree = "<group>";
+		};
+		6086556C21DE2E3200C3E9EF /* CarLoanVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086556D21DE2E3200C3E9EF /* MM_CarLoanModel.h */,
+				6086556E21DE2E3200C3E9EF /* Result */,
+				6086557321DE2E3200C3E9EF /* MM_CarLoanVC.m */,
+				6086557421DE2E3200C3E9EF /* MM_CarLoanModel.m */,
+				6086557521DE2E3200C3E9EF /* MM_CarLoanVC.h */,
+			);
+			name = CarLoanVC;
+			path = ../../../Calculator/Calculator/CarLoanVC;
+			sourceTree = "<group>";
+		};
+		6086556E21DE2E3200C3E9EF /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				6086556F21DE2E3200C3E9EF /* MM_CarLoanResultModel.h */,
+				6086557021DE2E3200C3E9EF /* MM_CarLoanResultVC.m */,
+				6086557121DE2E3200C3E9EF /* MM_CarLoanResultModel.m */,
+				6086557221DE2E3200C3E9EF /* MM_CarLoanResultVC.h */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		6086557621DE2E3200C3E9EF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6086557721DE2E3200C3E9EF /* NormalCell */,
+				6086557B21DE2E3200C3E9EF /* ConfromCell */,
+				6086557F21DE2E3200C3E9EF /* SwithCell */,
+			);
+			name = Cells;
+			path = ../../../Calculator/Calculator/Cells;
+			sourceTree = "<group>";
+		};
+		6086557721DE2E3200C3E9EF /* NormalCell */ = {
+			isa = PBXGroup;
+			children = (
+				6086557821DE2E3200C3E9EF /* MM_NormalCell.m */,
+				6086557921DE2E3200C3E9EF /* MM_NormalCell.h */,
+				6086557A21DE2E3200C3E9EF /* MM_NormalCell.xib */,
+			);
+			path = NormalCell;
+			sourceTree = "<group>";
+		};
+		6086557B21DE2E3200C3E9EF /* ConfromCell */ = {
+			isa = PBXGroup;
+			children = (
+				6086557C21DE2E3200C3E9EF /* MM_ConfromCell.xib */,
+				6086557D21DE2E3200C3E9EF /* MM_ConfromCell.h */,
+				6086557E21DE2E3200C3E9EF /* MM_ConfromCell.m */,
+			);
+			path = ConfromCell;
+			sourceTree = "<group>";
+		};
+		6086557F21DE2E3200C3E9EF /* SwithCell */ = {
+			isa = PBXGroup;
+			children = (
+				6086558021DE2E3200C3E9EF /* MM_SwithCell.xib */,
+				6086558121DE2E3200C3E9EF /* MM_SwithCell.h */,
+				6086558221DE2E3200C3E9EF /* MM_SwithCell.m */,
+			);
+			path = SwithCell;
+			sourceTree = "<group>";
+		};
+		6086558D21DE2E4000C3E9EF /* HouseLoanVC */ = {
+			isa = PBXGroup;
+			children = (
+				6086558E21DE2E4000C3E9EF /* Both */,
+				6086559321DE2E4000C3E9EF /* Result */,
+				6086559821DE2E4000C3E9EF /* MM_HouseLoanMenuView.h */,
+				6086559921DE2E4000C3E9EF /* MM_HouseLoanVC.m */,
+				6086559A21DE2E4000C3E9EF /* Business */,
+				6086559F21DE2E4000C3E9EF /* MM_HouseLoanMenuView.m */,
+				608655A021DE2E4000C3E9EF /* MM_HouseLoanVC.h */,
+				608655A121DE2E4000C3E9EF /* MM_HouseLoanMenuView.xib */,
+				608655A221DE2E4000C3E9EF /* Fund */,
+			);
+			name = HouseLoanVC;
+			path = ../../../Calculator/Calculator/HouseLoanVC;
+			sourceTree = "<group>";
+		};
+		6086558E21DE2E4000C3E9EF /* Both */ = {
+			isa = PBXGroup;
+			children = (
+				6086558F21DE2E4000C3E9EF /* MM_BothLoanVC.h */,
+				6086559021DE2E4000C3E9EF /* MM_BothLoanModel.m */,
+				6086559121DE2E4000C3E9EF /* MM_BothLoanModel.h */,
+				6086559221DE2E4000C3E9EF /* MM_BothLoanVC.m */,
+			);
+			path = Both;
+			sourceTree = "<group>";
+		};
+		6086559321DE2E4000C3E9EF /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				6086559421DE2E4000C3E9EF /* MM_HouseLoanResultVC.h */,
+				6086559521DE2E4000C3E9EF /* MM_HouseLoanResultModel.h */,
+				6086559621DE2E4000C3E9EF /* MM_HouseLoanResultVC.m */,
+				6086559721DE2E4000C3E9EF /* MM_HouseLoanResultModel.m */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		6086559A21DE2E4000C3E9EF /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				6086559B21DE2E4000C3E9EF /* MM_BusinessLoanModel.m */,
+				6086559C21DE2E4000C3E9EF /* MM_BusinessLoanVC.h */,
+				6086559D21DE2E4000C3E9EF /* MM_BusinessLoanModel.h */,
+				6086559E21DE2E4000C3E9EF /* MM_BusinessLoanVC.m */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		608655A221DE2E4000C3E9EF /* Fund */ = {
+			isa = PBXGroup;
+			children = (
+				608655A321DE2E4000C3E9EF /* MM_FundLoanModel.m */,
+				608655A421DE2E4000C3E9EF /* MM_FundLoanVC.h */,
+				608655A521DE2E4000C3E9EF /* MM_FundLoanModel.h */,
+				608655A621DE2E4000C3E9EF /* MM_FundLoanVC.m */,
+			);
+			path = Fund;
+			sourceTree = "<group>";
+		};
+		CB485094A7C5A7D84E22B311 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				393F28F3699A7E1501D98191 /* Pods-Manager.debug.xcconfig */,
+				6312197B8F5A5C2172A26E0E /* Pods-Manager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EAD647ED7870F43C793FAF2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A10442C1A0BF5D8B05A3A68E /* libPods-Manager.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		602237C021C76E6A003F1E06 /* Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 602237D721C76E6B003F1E06 /* Build configuration list for PBXNativeTarget "Manager" */;
+			buildPhases = (
+				F6452BDCC74BE00410B378F2 /* [CP] Check Pods Manifest.lock */,
+				602237BD21C76E6A003F1E06 /* Sources */,
+				602237BE21C76E6A003F1E06 /* Frameworks */,
+				602237BF21C76E6A003F1E06 /* Resources */,
+				5206455FF55556C5596EFA9D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Manager;
+			productName = Manager;
+			productReference = 602237C121C76E6A003F1E06 /* Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		602237B921C76E6A003F1E06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM_;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = devfalme;
+				TargetAttributes = {
+					602237C021C76E6A003F1E06 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 602237BC21C76E6A003F1E06 /* Build configuration list for PBXProject "Manager" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 602237B821C76E6A003F1E06;
+			productRefGroup = 602237C221C76E6A003F1E06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				602237C021C76E6A003F1E06 /* Manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		602237BF21C76E6A003F1E06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602237EF21C77D25003F1E06 /* MM_BillCell.xib in Resources */,
+				6086555821DE2CCD00C3E9EF /* MM_FinancialMenuView.xib in Resources */,
+				6033869521CA203200398C20 /* MM_ChartNavigationView.xib in Resources */,
+				6071A80921C89B0B00DAD4D9 /* MM_AccountCell.xib in Resources */,
+				6071A80421C89A0900DAD4D9 /* MM_AccountSectionView.xib in Resources */,
+				603386B521CA6A0C00398C20 /* MM_AdVC.xib in Resources */,
+				6086558821DE2E3200C3E9EF /* MM_NormalCell.xib in Resources */,
+				6024595F21C89725008C3B9F /* MM_AccountBoardView.xib in Resources */,
+				6024594621C7AE4D008C3B9F /* MM_BillNavigationView.xib in Resources */,
+				6024593821C78820008C3B9F /* BillExpend.plist in Resources */,
+				602CB10621C8E34B0071D4FF /* WSDatePickerView.xib in Resources */,
+				602237D121C76E6B003F1E06 /* LaunchScreen.storyboard in Resources */,
+				6086556B21DE2E2A00C3E9EF /* MM_TextFieldVC.xib in Resources */,
+				6086558921DE2E3200C3E9EF /* MM_ConfromCell.xib in Resources */,
+				602237CE21C76E6B003F1E06 /* Assets.xcassets in Resources */,
+				6086553021DE29F600C3E9EF /* MM_CaculatorsNavigationView.xib in Resources */,
+				6024595221C7BC93008C3B9F /* MM_BillKeyboard.xib in Resources */,
+				6024593A21C78BA2008C3B9F /* BillIncome.plist in Resources */,
+				602CB4B021CA15580071D4FF /* MM_ExpendChartVC.xib in Resources */,
+				6086555121DE2CCD00C3E9EF /* ChooseDatePickerView.xib in Resources */,
+				6033869F21CA316300398C20 /* MM_BillDetailVC.xib in Resources */,
+				603386AF21CA62A100398C20 /* MM_SplVC.xib in Resources */,
+				608655AF21DE2E4000C3E9EF /* MM_HouseLoanMenuView.xib in Resources */,
+				602CB4B921CA193D0071D4FF /* MM_IncomeChartVC.xib in Resources */,
+				6086558B21DE2E3200C3E9EF /* MM_SwithCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5206455FF55556C5596EFA9D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manager/Pods-Manager-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/QMUIKit/QMUIKit/QMUIResources/QMUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/QMUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Manager/Pods-Manager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6452BDCC74BE00410B378F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Manager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		602237BD21C76E6A003F1E06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6086555521DE2CCD00C3E9EF /* MM_FinancialP2PModel.m in Sources */,
+				6086555221DE2CCD00C3E9EF /* MM_BankResultVC.m in Sources */,
+				6024594A21C7AF41008C3B9F /* UIView+MM_Manager.m in Sources */,
+				6024593E21C791CD008C3B9F /* MM_BaseModel.m in Sources */,
+				6024594121C7ADD9008C3B9F /* MM_ExpendVC.m in Sources */,
+				602CB4AA21CA14AA0071D4FF /* DVPieChart.m in Sources */,
+				6024595D21C89542008C3B9F /* MM_AccountBoardView.m in Sources */,
+				6086556521DE2DB800C3E9EF /* MM_WebLoanVC.m in Sources */,
+				602237E221C77957003F1E06 /* MM_BaseTableVC.m in Sources */,
+				603386A321CA4F8300398C20 /* MM_EditVC.m in Sources */,
+				603386B921CA72E000398C20 /* MM_ChartDetailVC.m in Sources */,
+				602237DE21C778F5003F1E06 /* MM_BaseVC.m in Sources */,
+				6086558421DE2E3200C3E9EF /* MM_CarLoanResultModel.m in Sources */,
+				602CB10721C8E34B0071D4FF /* WSDatePickerView.m in Sources */,
+				602237E621C77986003F1E06 /* MM_BillVC.m in Sources */,
+				6086555421DE2CCD00C3E9EF /* MM_P2PResultVC.m in Sources */,
+				6086558A21DE2E3200C3E9EF /* MM_ConfromCell.m in Sources */,
+				602CB4A921CA14AA0071D4FF /* DVFoodPieModel.m in Sources */,
+				608655B021DE2E4000C3E9EF /* MM_FundLoanModel.m in Sources */,
+				6086555621DE2CCD00C3E9EF /* MM_FinancialP2PVC.m in Sources */,
+				6024594421C7AE45008C3B9F /* MM_BillNavigationView.m in Sources */,
+				603386AE21CA62A100398C20 /* MM_SplVC.m in Sources */,
+				602237D421C76E6B003F1E06 /* main.m in Sources */,
+				6033869321CA202D00398C20 /* MM_ChartNavigationView.m in Sources */,
+				608655AC21DE2E4000C3E9EF /* MM_BusinessLoanModel.m in Sources */,
+				602CB10D21C9E6480071D4FF /* MM_BaseNavigationController.m in Sources */,
+				6086554F21DE2CCD00C3E9EF /* MM_FinancialVC.m in Sources */,
+				6024595A21C893C2008C3B9F /* MM_AccountVC.m in Sources */,
+				6086552521DE253000C3E9EF /* MM_TabbarVC.m in Sources */,
+				6086558721DE2E3200C3E9EF /* MM_NormalCell.m in Sources */,
+				6086554E21DE2CCD00C3E9EF /* MM_FinancialBankModel.m in Sources */,
+				6024595621C7C322008C3B9F /* MM_TestVC.m in Sources */,
+				6033869921CA2ACF00398C20 /* UIViewController+MM_Manager.m in Sources */,
+				6086556A21DE2E2A00C3E9EF /* MM_TextFieldVC.m in Sources */,
+				602CB0FC21C8D91E0071D4FF /* UIScrollView+MM_Manager.m in Sources */,
+				6086558321DE2E3200C3E9EF /* MM_CarLoanResultVC.m in Sources */,
+				602237EA21C77A83003F1E06 /* MM_SegmentView.m in Sources */,
+				608655B121DE2E4000C3E9EF /* MM_FundLoanVC.m in Sources */,
+				6086558C21DE2E3200C3E9EF /* MM_SwithCell.m in Sources */,
+				6024594D21C7B625008C3B9F /* MM_IncomeVC.m in Sources */,
+				6086556321DE2DB800C3E9EF /* MM_WebLoanResultVC.m in Sources */,
+				602CB0F821C8C11F0071D4FF /* MM_AccountModel.m in Sources */,
+				602237EE21C77D25003F1E06 /* MM_BillCell.m in Sources */,
+				6024595021C7BC8C008C3B9F /* MM_BillKeyboard.m in Sources */,
+				602CB4B821CA193D0071D4FF /* MM_IncomeChartVC.m in Sources */,
+				603386A621CA4FB500398C20 /* MM_EditIncomeVC.m in Sources */,
+				603386A921CA4FC000398C20 /* MM_EditExpendVC.m in Sources */,
+				6071A80221C89A0100DAD4D9 /* MM_AccountSectionView.m in Sources */,
+				602CB4A821CA14AA0071D4FF /* DVPieCenterView.m in Sources */,
+				602CB4AF21CA15580071D4FF /* MM_ChartVC.m in Sources */,
+				608655A721DE2E4000C3E9EF /* MM_BothLoanModel.m in Sources */,
+				6086554D21DE2CCD00C3E9EF /* MM_FinancialBankVC.m in Sources */,
+				608655AE21DE2E4000C3E9EF /* MM_HouseLoanMenuView.m in Sources */,
+				608655AA21DE2E4000C3E9EF /* MM_HouseLoanResultModel.m in Sources */,
+				608655AB21DE2E4000C3E9EF /* MM_HouseLoanVC.m in Sources */,
+				6024593521C78411008C3B9F /* MM_Client.m in Sources */,
+				6033869E21CA316300398C20 /* MM_BillDetailVC.m in Sources */,
+				602CB10921C8E34B0071D4FF /* UIView+Extension.m in Sources */,
+				6086555321DE2CCD00C3E9EF /* MM_BankResultModel.m in Sources */,
+				602CB10821C8E34B0071D4FF /* NSDate+Extension.m in Sources */,
+				6086552E21DE29DE00C3E9EF /* MM_CaculatorsNavigationView.m in Sources */,
+				6086555021DE2CCD00C3E9EF /* ChooseDatePickerView.m in Sources */,
+				6086558621DE2E3200C3E9EF /* MM_CarLoanModel.m in Sources */,
+				6086556221DE2DB800C3E9EF /* MM_WebLoanModel.m in Sources */,
+				603386B421CA6A0C00398C20 /* MM_AdVC.m in Sources */,
+				602CB4B421CA19170071D4FF /* MM_ExpendChartVC.m in Sources */,
+				6086558521DE2E3200C3E9EF /* MM_CarLoanVC.m in Sources */,
+				6071A80821C89B0B00DAD4D9 /* MM_AccountCell.m in Sources */,
+				602237F221C77F6D003F1E06 /* MM_BillModel.m in Sources */,
+				6086556421DE2DB800C3E9EF /* MM_WebLoanResultModel.m in Sources */,
+				6086555721DE2CCD00C3E9EF /* MM_FinancialMenuView.m in Sources */,
+				608655AD21DE2E4000C3E9EF /* MM_BusinessLoanVC.m in Sources */,
+				608655A821DE2E4000C3E9EF /* MM_BothLoanVC.m in Sources */,
+				602237C621C76E6A003F1E06 /* AppDelegate.m in Sources */,
+				608655A921DE2E4000C3E9EF /* MM_HouseLoanResultVC.m in Sources */,
+				6086552A21DE282D00C3E9EF /* MM_CaculatorsVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		602237CF21C76E6B003F1E06 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				602237D021C76E6B003F1E06 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		602237D521C76E6B003F1E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		602237D621C76E6B003F1E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		602237D821C76E6B003F1E06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393F28F3699A7E1501D98191 /* Pods-Manager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Manager/Manager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 352Q767VR5;
+				GCC_PREFIX_HEADER = Manager/PCH/PrefixHeader.pch;
+				INFOPLIST_FILE = Manager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Manager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moc.reganaMyenom.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		602237D921C76E6B003F1E06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6312197B8F5A5C2172A26E0E /* Pods-Manager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Manager/Manager.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 352Q767VR5;
+				GCC_PREFIX_HEADER = Manager/PCH/PrefixHeader.pch;
+				INFOPLIST_FILE = Manager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Manager",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = moc.reganaMyenom.www;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		602237BC21C76E6A003F1E06 /* Build configuration list for PBXProject "Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602237D521C76E6B003F1E06 /* Debug */,
+				602237D621C76E6B003F1E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		602237D721C76E6B003F1E06 /* Build configuration list for PBXNativeTarget "Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				602237D821C76E6B003F1E06 /* Debug */,
+				602237D921C76E6B003F1E06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 602237B921C76E6A003F1E06 /* Project object */;
+}

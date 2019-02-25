@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  Manager
+//
+//  Created by devfalme on 2018/12/17.
+//  Copyright © 2018 devfalme. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+
+#import <LKDBHelper/LKDBHelper.h>
+#import <QMUIKit/QMUIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <Router_t/Router_t.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+
+#import "MM_Client.h"
+
+#import "UIView+MM_Manager.h"
+#import "UIViewController+MM_Manager.h"
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(@"%s%@",__PRETTY_FUNCTION__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define NSLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */

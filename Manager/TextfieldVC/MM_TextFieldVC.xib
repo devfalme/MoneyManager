@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MM_TextFieldVC">
+            <connections>
+                <outlet property="textField" destination="PzN-8f-qbK" id="xxi-ES-bo2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMq-AN-mfF">
+                    <rect key="frame" x="15" y="40" width="345" height="48"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PzN-8f-qbK" customClass="QMUITextField">
+                            <rect key="frame" x="10" y="0.0" width="325" height="48"/>
+                            <color key="tintColor" red="0.31764705879999999" green="0.32156862749999998" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                            <color key="textColor" red="0.31764705879999999" green="0.32156862749999998" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="4bs-KK-NxN"/>
+                        <constraint firstItem="PzN-8f-qbK" firstAttribute="leading" secondItem="xMq-AN-mfF" secondAttribute="leading" constant="10" id="BUt-nb-iJC"/>
+                        <constraint firstItem="PzN-8f-qbK" firstAttribute="top" secondItem="xMq-AN-mfF" secondAttribute="top" id="SOW-yi-b2z"/>
+                        <constraint firstAttribute="bottom" secondItem="PzN-8f-qbK" secondAttribute="bottom" id="are-DS-i9d"/>
+                        <constraint firstAttribute="trailing" secondItem="PzN-8f-qbK" secondAttribute="trailing" constant="10" id="iUs-s3-eN9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.31764705879999999" green="0.32156862749999998" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFb-VB-6Lc">
+                    <rect key="frame" x="15" y="531" width="345" height="48"/>
+                    <color key="backgroundColor" red="0.31764705879999999" green="0.32156862749999998" blue="0.31764705879999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="lfr-ZE-unW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="confirmButtonAction:" destination="-1" eventType="touchUpInside" id="Jvf-AK-mYd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WFb-VB-6Lc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="7Ti-Bl-uIW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="WFb-VB-6Lc" secondAttribute="bottom" constant="88" id="LyN-AE-Jbd"/>
+                <constraint firstItem="xMq-AN-mfF" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="TnR-d8-V6o"/>
+                <constraint firstItem="WFb-VB-6Lc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WAT-sk-7yJ"/>
+                <constraint firstItem="xMq-AN-mfF" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="blw-yC-FQm"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="xMq-AN-mfF" secondAttribute="trailing" constant="15" id="ixs-l2-HIx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WFb-VB-6Lc" secondAttribute="trailing" constant="15" id="pBY-oy-HIb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
